@@ -9,7 +9,7 @@
 	<style>
 		body {
 		background-image: url("wood.jpg");
-		background-size: 90%;
+		background-size: 80%;
 		font-size:20px;
 		}
 
@@ -30,7 +30,6 @@
 		.box {
 		background-color: rgba(220, 255, 220, 0.4);
 		text-align: center;
-		height: 1000px;
 		margin-left: 100px;
 		margin-right: 100px;
 		backdrop-filter: blur(15px);
@@ -39,16 +38,37 @@
 		margin-bottom: 25px;
 		}
 
+		.grid-container {
+		display: grid;
+		grid-template-areas:
+		'main main main main main main'
+		'footer footer footer footer footer footer';
+		gap: 25px;
+		padding: 50px;
+		}
+
+		.main { grid-area: main; }
+
+		.map { grid-area: footer; }
+
 	</style>
 	
 	<body>
 		
 		<div class="box">
+		<div class="grid-container">
 
-			<br>
+			<div class="main">
 
-			<h1>John & Emma</h1>
+				<h1>John & Emma</h1>
+	
+				<p>they are getting married. woah. thats cool. beast attack<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡<br>𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡𓃡</p>
 
-			<p>they are getting married. woah. thats cool</p>
+			</div>
 
+			<div class="map">
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2223.7655706162977!2d-3.80602028373683!3d56.126572480654985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48887de89a3d0ba9%3A0xed9aebff31d43877!2sInglewood+House+and+Spa!5e0!3m2!1sen!2suk!4v1556269220696!5m2!1sen!2suk" width="100%" height="250">          
+				
+			</div>
 		</div>
